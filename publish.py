@@ -17,7 +17,7 @@ if not bake.HOLD and (held := [l for l in LAYERS if not bake.LAYERS[l][2]]):
 GEOJSON = [f for l in LAYERS for f in IDX['geojson'][l]]
 DATASET_FILES = ['index.json'] + GEOJSON
 BUCKET_FILES = ['index.json'] + [f for f in GEOJSON if f.endswith('_GDA2020.geojson')] + [f'{l}{x}.pmtiles' for l in LAYERS for x in ('', '-thinned')]
-KAGGLE = ('helenkwok/sa-fire', 'AlreadyOpen: South Australia fire layers')     # mirrored by kaggle_mirror.py (title 6-50 chars)
+KAGGLE = ('helenkwok/sa-fire', 'Milleleaf: South Australia fire layers')     # mirrored by kaggle_mirror.py (title 6-50 chars)
 
 def main():
     if not LAYERS:

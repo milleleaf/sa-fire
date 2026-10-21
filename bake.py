@@ -34,7 +34,7 @@ LAYERS = {
 }
 HOLD = os.environ.get('HOLD') == '1'
 OPEN = [l for l, v in LAYERS.items() if v[2]]
-UA = {'User-Agent': 'AlreadyOpen sa-fire (https://github.com/milleleaf/sa-fire)'}
+UA = {'User-Agent': 'Milleleaf sa-fire (https://github.com/milleleaf/sa-fire)'}
 REPO = 'milleleaf/sa-fire'
 MINZOOM, MAXZOOM = 4, 14
 

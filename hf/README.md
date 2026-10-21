@@ -14,7 +14,7 @@ tags:
 
 Statewide fire layers published on Data.SA by the Department for Environment and Water and the SA Country Fire Service, as the
 GeoJSON files exactly as published plus two sets of vector tiles, checked weekly and rebuilt when a source changes by
-[AlreadyOpen/sa-fire](https://github.com/milleleaf/sa-fire). Every feature and every field of each source is kept.
+[milleleaf/sa-fire](https://github.com/milleleaf/sa-fire). Every feature and every field of each source is kept.
 
 | Layer | Source | Holds |
 |---|---|---|
