@@ -14,7 +14,7 @@ tags:
 
 Statewide fire layers published on Data.SA by the Department for Environment and Water and the SA Country Fire Service, as the
 GeoJSON files exactly as published plus two sets of vector tiles, checked weekly and rebuilt when a source changes by
-[AlreadyOpen/sa-fire](https://github.com/AlreadyOpen/sa-fire). Every feature and every field of each source is kept.
+[AlreadyOpen/sa-fire](https://github.com/milleleaf/sa-fire). Every feature and every field of each source is kept.
 
 | Layer | Source | Holds |
 |---|---|---|
@@ -26,7 +26,7 @@ GeoJSON files exactly as published plus two sets of vector tiles, checked weekly
 Per layer:
 
 - **`*_GDA2020.geojson`** and **`*_GDA94.geojson`** (in this dataset; the GDA2020 file also on the
-  [bucket](https://huggingface.co/buckets/alreadyopen/sa-fire)): the source's GeoJSON files, byte for byte, with their
+  [bucket](https://huggingface.co/buckets/milleleaf/sa-fire)): the source's GeoJSON files, byte for byte, with their
   original names. GDA2020 is EPSG:7844, which web maps can use as WGS 84 (they differ by under 2 m); GDA94 is EPSG:4283.
 - **`<layer>.pmtiles`** (bucket, read by browsers), **lossless**: zooms 4 to 14, every field plus `fid` (the feature's
   position in the GDA2020 file, from 0). No feature or tile size limit, no tiny-polygon reduction and no point thinning (`-r1`) at any zoom; shapes are

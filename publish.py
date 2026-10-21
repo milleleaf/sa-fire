@@ -8,7 +8,7 @@ Usage: python3 publish.py     (after bake.py)"""
 import json, os, sys
 import bake, manifest, sources
 
-REPO = 'alreadyopen/sa-fire'
+REPO = 'milleleaf/sa-fire'
 _idx = os.path.join(sources.OUT, 'index.json')
 IDX = json.load(open(_idx)) if os.path.exists(_idx) else {'layers': [], 'geojson': {}}
 LAYERS = IDX['layers']

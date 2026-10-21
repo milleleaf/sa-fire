@@ -4,11 +4,11 @@ South Australia fire layers from Data.SA, CC BY 4.0: Bushfires and Prescribed Bu
 Burn Boundaries and Emergency Location Markers (Department for Environment and Water), and Bushfire Management Areas (SA
 Country Fire Service). For each: the published GeoJSON files unchanged (GDA2020 and GDA94), lossless PMTiles (every feature
 at zoom 14, asserted) and thinned PMTiles (tippecanoe defaults, `--drop-densest-as-needed`). Checked weekly and rebuilt when
-a source changes; published to Hugging Face ([dataset](https://huggingface.co/datasets/alreadyopen/sa-fire),
-[bucket](https://huggingface.co/buckets/alreadyopen/sa-fire) for what browsers read) and mirrored to
+a source changes; published to Hugging Face ([dataset](https://huggingface.co/datasets/milleleaf/sa-fire),
+[bucket](https://huggingface.co/buckets/milleleaf/sa-fire) for what browsers read) and mirrored to
 [Kaggle](https://www.kaggle.com/datasets/helenkwok/sa-fire). Built from
-[pipeline-template](https://github.com/AlreadyOpen/pipeline-template), like
-[sa-planning](https://github.com/AlreadyOpen/sa-planning).
+[pipeline-template](https://github.com/milleleaf/pipeline-template), like
+[sa-planning](https://github.com/milleleaf/sa-planning).
 
     python3 bake.py [layer ...]   # data/out/: GeoJSON + PMTiles + index.json (needs tippecanoe 2.79); REBAKE=1 bakes unchanged sources
     python3 publish.py            # gate, then Hugging Face (HF_TOKEN)
